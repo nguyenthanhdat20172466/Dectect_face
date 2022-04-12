@@ -1,7 +1,4 @@
 # SIMPLE FACENET
-Video step by step: https://www.youtube.com/watch?v=-8jTTeXzfFc&list=PLUzMg0FYFJETawSkez0b9C41ByOo6_N5L&index=3
-
-(Fork and edit from repo: https://github.com/davidsandberg/facenet)
 
 ### 1. Colect data:
 Colect data and push it into ```your_face``` as bellow:
@@ -60,11 +57,7 @@ align_mtcnn('your_face', 'face_align')
 train('face_align/', 'models/20180402-114759.pb', 'models/your_model.pkl')
 ```
 - ```align_mtcnn``` use MTCNN (Multi-task Cascaded Convolutional Networks) to find face and crop.
-![MTCNN](image/mtcnn.png)
-(image cre: [kpzhang93.github.io](https://kpzhang93.github.io/MTCNN_face_detection_alignment/))
-- ```train``` facenet 
-![FaceNet](image/facenet.png)
-(image cre: [towardsdatascience](https://towardsdatascience.com/a-facenet-style-approach-to-facial-recognition-dc0944efe8d1))
+
 ### 5. Detection:
 run ```detection.py```
 ```python
